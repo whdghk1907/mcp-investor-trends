@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(python -m pytest tests/unit/test_config.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_config.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_server.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_server.py::TestInvestorTrendsMCPServer::test_server_initialization -v)",
+      "Bash(python3 -m pytest tests/unit/test_server.py::TestInvestorTrendsMCPServer::test_validate_investor_type_valid -v)",
+      "Bash(python3 -m pytest tests/unit/test_server.py::TestInvestorTrendsMCPServer::test_get_investor_trading_with_valid_params -v)",
+      "Bash(python3 -m pytest tests/unit/ -v)",
+      "Bash(python3 -m pytest tests/unit/test_models.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_exceptions.py -v)",
+      "Bash(python3 -m pytest tests/unit/ -v --cov=src)",
+      "Bash(python3 -m pytest tests/unit/test_api_client.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_api_client_simple.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_database.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_database_simple.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_config.py tests/unit/test_server.py tests/unit/test_models.py tests/unit/test_exceptions.py tests/unit/test_api_client_simple.py tests/unit/test_database_simple.py -v --cov=src)",
+      "Bash(find:*)",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(python3 -m pytest tests/ -v --tb=short)",
+      "Bash(python3 -m pytest tests/integration/test_system_integration.py -v)",
+      "Bash(python3 -m pytest tests/unit/test_config.py tests/unit/test_exceptions.py tests/unit/test_models.py tests/unit/test_server.py tests/unit/test_api_client_simple.py tests/unit/test_database_simple.py -v)",
+      "Bash(python3 -m pytest tests/unit/ --cov=src --cov-report=term-missing --cov-report=html -v)",
+      "Bash(python3 -m pytest tests/unit/tools/test_investor_tools.py -v)"
+    ],
+    "deny": []
+  }
+}
